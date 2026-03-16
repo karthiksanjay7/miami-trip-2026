@@ -4,93 +4,372 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miami + Key West · May 1–4, 2026</title>
+
+<!-- Open Graph / WhatsApp preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://karthiksanjay7.github.io/miami-trip-2026/">
+<meta property="og:title" content="Miami + Key West · May 1–4, 2026 🌊🏎️">
+<meta property="og:description" content="Party bus, F1 Miami Grand Prix, Key West ocean adventures. The official trip plan. Tap to open 🔥">
+<meta property="og:image" content="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=1200&q=80">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Miami + Key West · May 1–4, 2026 🌊🏎️">
+<meta name="twitter:description" content="Party bus, F1 Miami Grand Prix, Key West ocean adventures. The official trip plan. 🔥">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=1200&q=80">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   :root {
-    --navy: #1A3A5C; --navy-dark: #0D2038; --red: #E24B4A; --red-lt: #FDEAEA;
-    --teal: #1D9E75; --teal-lt: #E1F5EE; --amber: #BA7517; --amber-lt: #FEF3CD;
-    --blue: #185FA5; --blue-lt: #E6F1FB; --purple: #6C3483; --purple-lt: #F3E8FF;
-    --gray: #888780; --gray-lt: #F5F5F3; --border: #E0DDD6;
-    --text: #1C1C1C; --text2: #6B6A66; --bg: #F7F6F3; --white: #FFFFFF;
+    --navy: #1A3A5C;
+    --navy-dark: #0D2038;
+    --red: #E24B4A;
+    --red-lt: #FDEAEA;
+    --teal: #1D9E75;
+    --teal-lt: #E1F5EE;
+    --amber: #BA7517;
+    --amber-lt: #FEF3CD;
+    --blue: #185FA5;
+    --blue-lt: #E6F1FB;
+    --purple: #6C3483;
+    --purple-lt: #F3E8FF;
+    --gray: #888780;
+    --gray-lt: #F5F5F3;
+    --border: #E0DDD6;
+    --text: #1C1C1C;
+    --text2: #6B6A66;
+    --bg: #F7F6F3;
+    --white: #FFFFFF;
   }
+
   html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
-  .hero { background: var(--navy-dark); padding: 60px 40px 50px; position: relative; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 50%, rgba(24,95,165,0.25) 0%, transparent 65%), radial-gradient(ellipse at 20% 80%, rgba(29,158,117,0.15) 0%, transparent 55%); }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy-dark);
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(24,95,165,0.25) 0%, transparent 65%),
+                radial-gradient(ellipse at 20% 80%, rgba(29,158,117,0.15) 0%, transparent 55%);
+  }
   .hero-inner { position: relative; max-width: 960px; margin: 0 auto; }
-  .hero-eyebrow { font-family: 'Bebas Neue', sans-serif; font-size: 12px; letter-spacing: 4px; color: rgba(174,214,241,0.7); margin-bottom: 12px; }
-  .hero-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(52px, 8vw, 86px); letter-spacing: 3px; color: #fff; line-height: 0.95; margin-bottom: 16px; }
+  .hero-eyebrow {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: rgba(174,214,241,0.7);
+    margin-bottom: 12px;
+  }
+  .hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 8vw, 86px);
+    letter-spacing: 3px;
+    color: #fff;
+    line-height: 0.95;
+    margin-bottom: 16px;
+  }
   .hero-title span { color: #5DADE2; }
-  .hero-sub { font-size: 15px; font-weight: 300; color: rgba(174,214,241,0.8); letter-spacing: 0.5px; }
-  .stats-bar { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transform: translateY(-1px); box-shadow: 0 4px 24px rgba(0,0,0,0.07); }
-  .stat { background: var(--white); padding: 20px 16px; text-align: center; }
-  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 1px; line-height: 1; margin-bottom: 4px; }
+  .hero-sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(174,214,241,0.8);
+    letter-spacing: 0.5px;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  }
+  .stat {
+    background: var(--white);
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
   .stat-label { font-size: 11px; font-weight: 500; color: var(--text2); letter-spacing: 0.5px; text-transform: uppercase; }
-  .stat.s-blue .stat-num { color: var(--blue); } .stat.s-red .stat-num { color: var(--red); } .stat.s-teal .stat-num { color: var(--teal); } .stat.s-purple .stat-num { color: var(--purple); }
+  .stat.s-blue .stat-num { color: var(--blue); }
+  .stat.s-red .stat-num { color: var(--red); }
+  .stat.s-teal .stat-num { color: var(--teal); }
+  .stat.s-purple .stat-num { color: var(--purple); }
+
+  /* ── MAIN CONTENT ── */
   .main { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
-  .day-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
-  .day-header { display: flex; align-items: center; gap: 14px; padding: 18px 24px; border-bottom: 1px solid var(--border); }
-  .day-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+
+  /* Day card */
+  .day-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .day-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
   .day-title-wrap { flex: 1; }
   .day-name { font-size: 16px; font-weight: 500; color: var(--text); }
   .day-date { font-size: 12px; color: var(--text2); margin-top: 1px; }
-  .day-badge { font-family: 'Bebas Neue', sans-serif; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 20px; }
-  .note-bar { display: flex; align-items: flex-start; gap: 10px; padding: 12px 24px; font-size: 13px; font-weight: 400; border-bottom: 1px solid var(--border); }
-  .note-bar::before { content: '!'; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-  .note-amber { background: var(--amber-lt); color: #7B5000; } .note-amber::before { background: var(--amber); color: #fff; }
-  .note-teal { background: var(--teal-lt); color: #0A5E42; } .note-teal::before { background: var(--teal); color: #fff; }
-  .col-headers { display: grid; grid-template-columns: 150px 220px 1fr; padding: 8px 24px; background: var(--navy); gap: 12px; }
-  .col-headers span { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); }
-  .event-row { display: grid; grid-template-columns: 150px 220px 1fr; padding: 13px 24px; gap: 12px; align-items: start; border-bottom: 1px solid var(--border); transition: background 0.15s; }
+  .day-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* Note bar */
+  .note-bar {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--border);
+  }
+  .note-bar::before {
+    content: '!';
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .note-amber { background: var(--amber-lt); color: #7B5000; }
+  .note-amber::before { background: var(--amber); color: #fff; }
+  .note-teal { background: var(--teal-lt); color: #0A5E42; }
+  .note-teal::before { background: var(--teal); color: #fff; }
+
+  /* Column headers */
+  .col-headers {
+    display: grid;
+    grid-template-columns: 150px 220px 1fr;
+    padding: 8px 24px;
+    background: var(--navy);
+    gap: 12px;
+  }
+  .col-headers span {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* Event rows */
+  .event-row {
+    display: grid;
+    grid-template-columns: 150px 220px 1fr;
+    padding: 13px 24px;
+    gap: 12px;
+    align-items: start;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
   .event-row:last-child { border-bottom: none; }
-  .event-row:nth-child(odd) { background: var(--gray-lt); } .event-row:nth-child(even) { background: var(--white); } .event-row:hover { background: #EEECEA; }
-  .event-time { font-size: 12px; color: var(--text2); padding-top: 2px; display: flex; align-items: flex-start; gap: 8px; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+  .event-row:nth-child(odd) { background: var(--gray-lt); }
+  .event-row:nth-child(even) { background: var(--white); }
+  .event-row:hover { background: #EEECEA; }
+
+  .event-time {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text2);
+    padding-top: 2px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
   .event-title { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.4; }
-  .event-tag { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 10px; margin-top: 5px; }
+  .event-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
   .event-note { font-size: 13px; color: var(--text2); line-height: 1.5; }
-  .d-red .day-icon { background: var(--red-lt); } .d-red .day-badge { background: var(--red-lt); color: var(--red); } .d-red .day-header { border-left: 4px solid var(--red); }
-  .d-blue .day-icon { background: var(--blue-lt); } .d-blue .day-badge { background: var(--blue-lt); color: var(--blue); } .d-blue .day-header { border-left: 4px solid var(--blue); }
-  .d-teal .day-icon { background: var(--teal-lt); } .d-teal .day-badge { background: var(--teal-lt); color: var(--teal); } .d-teal .day-header { border-left: 4px solid var(--teal); }
-  .d-purple .day-icon { background: var(--purple-lt); } .d-purple .day-badge { background: var(--purple-lt); color: var(--purple); } .d-purple .day-header { border-left: 4px solid var(--purple); }
-  .dot-red { background: var(--red); } .dot-teal { background: var(--teal); } .dot-amber { background: var(--amber); } .dot-blue { background: var(--blue); } .dot-purple { background: var(--purple); } .dot-gray { background: var(--gray); }
-  .tag-red { background: var(--red-lt); color: var(--red); } .tag-teal { background: var(--teal-lt); color: var(--teal); } .tag-amber { background: var(--amber-lt); color: var(--amber); } .tag-blue { background: var(--blue-lt); color: var(--blue); } .tag-purple { background: var(--purple-lt); color: var(--purple); }
-  .checklist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
-  .check-item { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
-  .check-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+
+  /* Color variants */
+  .d-red .day-icon { background: var(--red-lt); }
+  .d-red .day-badge { background: var(--red-lt); color: var(--red); }
+  .d-red .day-header { border-left: 4px solid var(--red); }
+
+  .d-blue .day-icon { background: var(--blue-lt); }
+  .d-blue .day-badge { background: var(--blue-lt); color: var(--blue); }
+  .d-blue .day-header { border-left: 4px solid var(--blue); }
+
+  .d-teal .day-icon { background: var(--teal-lt); }
+  .d-teal .day-badge { background: var(--teal-lt); color: var(--teal); }
+  .d-teal .day-header { border-left: 4px solid var(--teal); }
+
+  .d-purple .day-icon { background: var(--purple-lt); }
+  .d-purple .day-badge { background: var(--purple-lt); color: var(--purple); }
+  .d-purple .day-header { border-left: 4px solid var(--purple); }
+
+  .dot-red { background: var(--red); }
+  .dot-teal { background: var(--teal); }
+  .dot-amber { background: var(--amber); }
+  .dot-blue { background: var(--blue); }
+  .dot-purple { background: var(--purple); }
+  .dot-gray { background: var(--gray); }
+
+  .tag-red { background: var(--red-lt); color: var(--red); }
+  .tag-teal { background: var(--teal-lt); color: var(--teal); }
+  .tag-amber { background: var(--amber-lt); color: var(--amber); }
+  .tag-blue { background: var(--blue-lt); color: var(--blue); }
+  .tag-purple { background: var(--purple-lt); color: var(--purple); }
+
+  /* Checklist */
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .check-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .check-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
   .check-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
   .check-desc { font-size: 12px; color: var(--text2); line-height: 1.5; }
-  .section-heading { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--navy); margin-bottom: 16px; margin-top: 8px; }
-  .links-row { display: flex; flex-direction: column; gap: 8px; }
-  .link-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+
+  /* Section heading */
+  .section-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: var(--navy);
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+
+  /* Links section */
+  .links-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .link-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+  }
   .link-item:hover { border-color: var(--navy); transform: translateX(3px); }
   .link-bullet { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .link-label { font-size: 13px; font-weight: 500; color: var(--text); }
   .link-url { font-size: 12px; color: var(--blue); margin-left: auto; }
-  .page-footer { background: var(--navy-dark); text-align: center; padding: 28px 20px; font-size: 12px; color: rgba(174,214,241,0.5); letter-spacing: 1px; }
+
+  /* Footer */
+  .page-footer {
+    background: var(--navy-dark);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 12px;
+    color: rgba(174,214,241,0.5);
+    letter-spacing: 1px;
+  }
+
+  /* Responsive */
   @media (max-width: 640px) {
-    .hero { padding: 40px 20px 44px; } .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 40px 20px 44px; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
     .col-headers, .event-row { grid-template-columns: 110px 1fr; }
     .col-headers span:last-child, .event-note { display: none; }
-    .checklist-grid { grid-template-columns: 1fr; } .link-url { display: none; }
+    .checklist-grid { grid-template-columns: 1fr; }
+    .link-url { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- SPLASH -->
+<!-- SPLASH SCREEN -->
 <div id="splash" style="position:fixed;inset:0;background:#0D2038;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;cursor:pointer;" onclick="enterTrip()">
   <div style="text-align:center;padding:40px 20px;max-width:480px;">
     <div style="font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:5px;color:rgba(174,214,241,0.6);margin-bottom:20px;">MAY 1–4, 2026</div>
     <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,10vw,96px);letter-spacing:3px;color:#fff;line-height:0.9;margin-bottom:8px;">MIAMI</div>
     <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,10vw,96px);letter-spacing:3px;color:#5DADE2;line-height:0.9;margin-bottom:32px;">KEY WEST</div>
     <div style="width:60px;height:1px;background:rgba(174,214,241,0.3);margin:0 auto 28px;"></div>
-    <div style="background:#5DADE2;color:#0D2038;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;padding:14px 40px;border-radius:50px;display:inline-block;margin-bottom:16px;transition:transform 0.15s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">▶ &nbsp; ENTER THE TRIP</div>
-    <div style="font-size:12px;color:rgba(174,214,241,0.45);margin-top:4px;">🎵 family ties — baby keem & kendrick</div>
+    <div style="background:#5DADE2;color:#0D2038;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;padding:14px 40px;border-radius:50px;display:inline-block;margin-bottom:16px;transition:transform 0.15s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+      ▶ &nbsp; ENTER THE TRIP
+    </div>
+    <div style="font-size:12px;color:rgba(174,214,241,0.45);margin-top:4px;">🎵 family ties — baby keem &amp; kendrick</div>
   </div>
-  <audio id="tripAudio" loop><source src="family_ties.mp3" type="audio/mpeg"></audio>
+  <audio id="tripAudio" loop>
+    <source src="family_ties.mp3" type="audio/mpeg">
+  </audio>
 </div>
+
 <script>
 function enterTrip() {
   var splash = document.getElementById('splash');
@@ -103,29 +382,45 @@ function enterTrip() {
 }
 </script>
 
-<!-- HERO -->
+
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">Group Trip · May 1–4, 2026</div>
     <div class="hero-title">Miami +<br><span>Key West</span></div>
     <div class="hero-sub">The Official Itinerary &nbsp;·&nbsp; Party Bus · F1 GP · Ocean Adventures</div>
-    <div style="margin-top:28px;padding-top:24px;border-top:1px solid rgba(174,214,241,0.2);max-width:620px;">
-      <div style="font-size:clamp(15px,2.2vw,19px);font-weight:300;font-style:italic;color:rgba(255,255,255,0.88);line-height:1.7;">"In Miami, sleep is just a rumour. We party through the night, ride the waves at dawn, and fill every hour with laughter loud enough to drown out the ocean."</div>
-      <div style="margin-top:14px;display:flex;align-items:center;gap:10px;">
-        <div style="height:1px;width:32px;background:rgba(93,173,226,0.6);"></div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:3px;color:#5DADE2;">Karthik · 2026</div>
+
+    <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(174,214,241,0.2); max-width: 620px;">
+      <div style="font-family: 'DM Sans', sans-serif; font-size: clamp(15px, 2.2vw, 19px); font-weight: 300; font-style: italic; color: rgba(255,255,255,0.88); line-height: 1.7; letter-spacing: 0.2px;">
+        "In Miami, sleep is just a rumour. We party through the night, ride the waves at dawn, and fill every hour with laughter loud enough to drown out the ocean."
+      </div>
+      <div style="margin-top: 14px; display: flex; align-items: center; gap: 10px;">
+        <div style="height: 1px; width: 32px; background: rgba(93,173,226,0.6);"></div>
+        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 15px; letter-spacing: 3px; color: #5DADE2;">Karthik &nbsp;·&nbsp; 2026</div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- STATS -->
-<div style="background:var(--navy-dark);padding:0 20px 28px;">
+<!-- STATS BAR -->
+<div style="background:var(--navy-dark); padding: 0 20px 28px;">
   <div class="stats-bar">
-    <div class="stat s-blue"><div class="stat-num">4</div><div class="stat-label">Days</div></div>
-    <div class="stat s-red"><div class="stat-num">4 hrs</div><div class="stat-label">Party Bus</div></div>
-    <div class="stat s-teal"><div class="stat-num">6.5 hrs</div><div class="stat-label">Ocean Adventure</div></div>
-    <div class="stat s-purple"><div class="stat-num">~10 hrs</div><div class="stat-label">Total Driving</div></div>
+    <div class="stat s-blue">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Days</div>
+    </div>
+    <div class="stat s-red">
+      <div class="stat-num">4 hrs</div>
+      <div class="stat-label">Party Bus</div>
+    </div>
+    <div class="stat s-teal">
+      <div class="stat-num">6.5 hrs</div>
+      <div class="stat-label">Ocean Adventure</div>
+    </div>
+    <div class="stat s-purple">
+      <div class="stat-num">~10 hrs</div>
+      <div class="stat-label">Total Driving</div>
+    </div>
   </div>
 </div>
 
@@ -136,28 +431,52 @@ function enterTrip() {
   <div class="day-card d-red">
     <div class="day-header">
       <div class="day-icon">🎉</div>
-      <div class="day-title-wrap"><div class="day-name">Arrival Day + Party Bus Night</div><div class="day-date">Thursday, May 1</div></div>
+      <div class="day-title-wrap">
+        <div class="day-name">Arrival Day + Party Bus Night</div>
+        <div class="day-date">Thursday, May 1</div>
+      </div>
       <div class="day-badge">Day 1</div>
     </div>
     <details style="border-bottom:1px solid var(--border);">
-      <summary style="padding:10px 24px;font-size:12px;font-weight:500;color:var(--red);cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;background:var(--red-lt);">
+      <summary style="padding:10px 24px;font-size:12px;font-weight:500;color:var(--blue);cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px;background:var(--blue-lt);">
         <span>📋 Read the day script</span><span style="margin-left:auto;font-size:11px;opacity:0.7;">tap to expand ▾</span>
       </summary>
-      <div style="padding:14px 24px 16px;background:var(--red-lt);font-size:13px;color:#7B1A1A;line-height:1.8;font-style:italic;">"Alright guys, land before 9pm. Get to the Airbnb, drop your stuff, freshen up. If you're early, chill out, grab some food, get some rest. But if you're coming in late, don't even think about resting — get ready straight away because the party bus leaves at 11:30 and it's not waiting for anyone. Four hours, different pubs, good time. We get back, we sleep. Simple as that."</div>
+      <div style="padding:14px 24px 16px;background:var(--blue-lt);font-size:13px;color:var(--navy);line-height:1.8;font-style:italic;">"Alright guys, land before 9pm. Get to the Airbnb, drop your stuff, freshen up. If you're early, chill out, grab some food, get some rest. But if you're coming in late, don't even think about resting — get ready straight away because the party bus leaves at 11:30 and it's not waiting for anyone. Four hours, different pubs, good time. We get back, we sleep. Simple as that."</div>
     </details>
     <div class="note-bar note-amber">Everyone must land at the airport before 9 PM — this gives enough time to get to the Airbnb before 11:30 PM when the party bus departs sharp. Late arrivals: skip rest, get ready immediately.</div>
-    <div class="col-headers"><span>Time</span><span>Event</span><span>Notes</span></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-teal"></span>By 9 PM</div><div><div class="event-title">Land at airport (early crew)</div><span class="event-tag tag-teal">Early crew</span></div><div class="event-note">Fly in before 9 PM, head straight to the Airbnb, relax and get ready for the night.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-amber"></span>9 PM – 11 PM</div><div><div class="event-title">Late arrivals — check in ASAP</div><span class="event-tag tag-amber">Priority</span></div><div class="event-note">No rest, get ready immediately. The party bus won't wait.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-red"></span>11:30 PM</div><div><div class="event-title">Party bus departs</div><span class="event-tag tag-red">4 hrs · Pub crawl</span></div><div class="event-note">4-hour pub crawl across Miami's best spots. Bus picks up from Airbnb — don't miss it.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-gray"></span>~3:30 AM</div><div><div class="event-title">Return & rest</div></div><div class="event-note">Back to the Airbnb. Get sleep — tomorrow is a big one.</div></div>
+    <div class="col-headers">
+      <span>Time</span><span>Event</span><span>Notes</span>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-teal"></span>By 9 PM</div>
+      <div><div class="event-title">Land at airport (early crew)</div><span class="event-tag tag-teal">Early crew</span></div>
+      <div class="event-note">Fly in before 9 PM, head straight to the Airbnb, relax and get ready for the night.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-amber"></span>9 PM – 11 PM</div>
+      <div><div class="event-title">Late arrivals — check in ASAP</div><span class="event-tag tag-amber">Priority</span></div>
+      <div class="event-note">No rest, get ready immediately. The party bus won't wait.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-red"></span>11:30 PM</div>
+      <div><div class="event-title">Party bus departs</div><span class="event-tag tag-red">4 hrs · Pub crawl</span></div>
+      <div class="event-note">4-hour pub crawl across Miami's best spots. Bus picks up from Airbnb — don't miss it.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-gray"></span>~3:30 AM</div>
+      <div><div class="event-title">Return & rest</div></div>
+      <div class="event-note">Back to the Airbnb. Get sleep — tomorrow is a big one.</div>
+    </div>
   </div>
 
   <!-- DAY 2 -->
   <div class="day-card d-blue">
     <div class="day-header">
       <div class="day-icon">🏎️</div>
-      <div class="day-title-wrap"><div class="day-name">F1 Miami Grand Prix + Drive to Key West</div><div class="day-date">Friday, May 2</div></div>
+      <div class="day-title-wrap">
+        <div class="day-name">F1 Miami Grand Prix + Drive to Key West</div>
+        <div class="day-date">Friday, May 2</div>
+      </div>
       <div class="day-badge">Day 2</div>
     </div>
     <details style="border-bottom:1px solid var(--border);">
@@ -167,20 +486,49 @@ function enterTrip() {
       <div style="padding:14px 24px 16px;background:var(--blue-lt);font-size:13px;color:var(--navy);line-height:1.8;font-style:italic;">"Up before 9am, no sleeping in. Today is the highlight of the whole trip — F1 Miami. We need to be at the venue by 12:30, that's the hard deadline. Sprint race, qualifying, the full experience. You'll feel the cars, it's something else. We stay till around 6, then head to South Beach for a proper dinner, celebrate the day. After that we hit the road south to Key West, about four hours drive. Yeah it's a late night — it's absolutely worth it."</div>
     </details>
     <div class="note-bar note-amber">🏁 Campus Pass has not opened yet — the moment it goes live, we book immediately. GO MAX VERSTAPPEN! 🏆</div>
-    <div class="col-headers"><span>Time</span><span>Event</span><span>Notes</span></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-teal"></span>Before 9 AM</div><div><div class="event-title">Wake up & get ready</div></div><div class="event-note">Everyone up before 9 AM. Quick breakfast and gear up for race day.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-red"></span>By 12:30 PM</div><div><div class="event-title">Arrive at F1 Miami GP</div><span class="event-tag tag-red">Hard deadline</span></div><div class="event-note">Hard cutoff — Sprint race + qualifying. Full race day experience.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-blue"></span>Until ~6 PM</div><div><div class="event-title">F1 experience</div><span class="event-tag tag-blue">Sprint + Qualifying</span></div><div class="event-note">Watch Sprint Race and Qualifying. Soak it all in — this is the highlight.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-amber"></span>~6 PM</div><div><div class="event-title">Head to South Beach</div><span class="event-tag tag-amber">Dinner</span></div><div class="event-note">Nice dinner on South Beach — celebrate an epic race day.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-purple"></span>~9–10 PM</div><div><div class="event-title">Depart for Key West</div><span class="event-tag tag-purple">~4 hr drive</span></div><div class="event-note">Head south on US-1. Aim to leave by 10 PM latest to reach resort before 2 AM.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-gray"></span>~1–2 AM</div><div><div class="event-title">Arrive at Key West resort</div></div><div class="event-note">Check in, unwind, rest up for the big adventure day ahead.</div></div>
+    <div class="col-headers">
+      <span>Time</span><span>Event</span><span>Notes</span>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-teal"></span>Before 9 AM</div>
+      <div><div class="event-title">Wake up &amp; get ready</div></div>
+      <div class="event-note">Everyone up before 9 AM. Quick breakfast and gear up for race day.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-red"></span>By 12:30 PM</div>
+      <div><div class="event-title">Arrive at F1 Miami GP</div><span class="event-tag tag-red">Hard deadline</span></div>
+      <div class="event-note">Hard cutoff — Sprint race + qualifying. Full race day experience.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-blue"></span>Until ~6 PM</div>
+      <div><div class="event-title">F1 experience</div><span class="event-tag tag-blue">Sprint + Qualifying</span></div>
+      <div class="event-note">Watch Sprint Race and Qualifying. Soak it all in — this is the highlight.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-amber"></span>~6 PM</div>
+      <div><div class="event-title">Head to South Beach</div><span class="event-tag tag-amber">Dinner</span></div>
+      <div class="event-note">Nice dinner on South Beach — celebrate an epic race day.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-purple"></span>~9–10 PM</div>
+      <div><div class="event-title">Depart for Key West</div><span class="event-tag tag-purple">~4 hr drive</span></div>
+      <div class="event-note">Head south on US-1. Aim to leave by 10 PM latest to reach resort before 2 AM.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-gray"></span>~1–2 AM</div>
+      <div><div class="event-title">Arrive at Key West resort</div></div>
+      <div class="event-note">Check in, unwind, rest up for the big adventure day ahead.</div>
+    </div>
   </div>
 
   <!-- DAY 3 -->
   <div class="day-card d-teal">
     <div class="day-header">
       <div class="day-icon">🌊</div>
-      <div class="day-title-wrap"><div class="day-name">Key West Ocean Adventures</div><div class="day-date">Saturday, May 3</div></div>
+      <div class="day-title-wrap">
+        <div class="day-name">Key West Ocean Adventures</div>
+        <div class="day-date">Saturday, May 3</div>
+      </div>
       <div class="day-badge">Day 3</div>
     </div>
     <details style="border-bottom:1px solid var(--border);">
@@ -190,19 +538,44 @@ function enterTrip() {
       <div style="padding:14px 24px 16px;background:var(--teal-lt);font-size:13px;color:var(--teal);line-height:1.8;font-style:italic;">"Wake up, look out the window, and you'll see the ocean right there. Take a moment, have some breakfast. Because at 10am we're boarding the Fury Cat and we won't be back for six and a half hours. Snorkeling, jet ski, parasailing — all of it. This is the best day of the trip, make the most of it. Evening we get a good seafood dinner in Key West, then we drive back to Miami. Trip done. What a few days."</div>
     </details>
     <div class="note-bar note-teal">Book Fury Cat in advance at furycat.com/key-west/watersports-attractions — weekend 10 AM slots fill up fast.</div>
-    <div class="col-headers"><span>Time</span><span>Event</span><span>Notes</span></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-teal"></span>Morning</div><div><div class="event-title">Wake up at oceanfront resort</div></div><div class="event-note">Enjoy the view, have breakfast, and soak in the Keys vibe.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-red"></span>10:00 AM</div><div><div class="event-title">Board Fury Cat</div><span class="event-tag tag-red">6.5 hrs on the water</span></div><div class="event-note">Snorkeling, Jet Ski, Parasailing and more. Full 6.5-hour ocean adventure.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-blue"></span>~4:30 PM</div><div><div class="event-title">Return from adventure</div></div><div class="event-note">Rest, shower, and celebrate — you earned it.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-amber"></span>Evening</div><div><div class="event-title">Dinner in Key West</div><span class="event-tag tag-amber">Fresh seafood</span></div><div class="event-note">Best meal of the trip. Fresh Keys seafood — celebrate the whole day.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-purple"></span>Night</div><div><div class="event-title">Drive back to Miami</div><span class="event-tag tag-purple">~4 hr drive</span></div><div class="event-note">Head north — the adventure is complete. Chill ride back.</div></div>
+    <div class="col-headers">
+      <span>Time</span><span>Event</span><span>Notes</span>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-teal"></span>Morning</div>
+      <div><div class="event-title">Wake up at oceanfront resort</div></div>
+      <div class="event-note">Enjoy the view, have breakfast, and soak in the Keys vibe.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-red"></span>10:00 AM</div>
+      <div><div class="event-title">Board Fury Cat</div><span class="event-tag tag-red">6.5 hrs on the water</span></div>
+      <div class="event-note">Snorkeling, Jet Ski, Parasailing and more. Full 6.5-hour ocean adventure.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-blue"></span>~4:30 PM</div>
+      <div><div class="event-title">Return from adventure</div></div>
+      <div class="event-note">Rest, shower, and celebrate — you earned it.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-amber"></span>Evening</div>
+      <div><div class="event-title">Dinner in Key West</div><span class="event-tag tag-amber">Fresh seafood</span></div>
+      <div class="event-note">Best meal of the trip. Fresh Keys seafood — celebrate the whole day.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-purple"></span>Night</div>
+      <div><div class="event-title">Drive back to Miami</div><span class="event-tag tag-purple">~4 hr drive</span></div>
+      <div class="event-note">Head north — the adventure is complete. Chill ride back.</div>
+    </div>
   </div>
 
   <!-- DAY 4 -->
   <div class="day-card d-purple">
     <div class="day-header">
       <div class="day-icon">👋</div>
-      <div class="day-title-wrap"><div class="day-name">Farewell Day</div><div class="day-date">Sunday, May 4</div></div>
+      <div class="day-title-wrap">
+        <div class="day-name">Farewell Day</div>
+        <div class="day-date">Sunday, May 4</div>
+      </div>
       <div class="day-badge">Day 4</div>
     </div>
     <details style="border-bottom:1px solid var(--border);">
@@ -211,39 +584,107 @@ function enterTrip() {
       </summary>
       <div style="padding:14px 24px 16px;background:var(--purple-lt);font-size:13px;color:var(--purple);line-height:1.8;font-style:italic;">"Nothing on the agenda today. Sleep in, get some good Miami food, just hang out with each other. Talk about everything that happened, have a laugh. Say your goodbyes properly. And to the ones who have work on Monday — we feel for you, but you lived. Go catch your flight and take care. Till next time. 🤙"</div>
     </details>
-    <div class="col-headers"><span>Time</span><span>Event</span><span>Notes</span></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-teal"></span>Morning</div><div><div class="event-title">Sleep in & relax</div></div><div class="event-note">No agenda. Enjoy the Airbnb one last time, great Miami food.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-blue"></span>All day</div><div><div class="event-title">Chill & good food</div></div><div class="event-note">Eat, decompress, reminisce about the best trip ever.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-amber"></span>As needed</div><div><div class="event-title">Goodbyes & departures</div></div><div class="event-note">Everyone catches their return flight at their own time.</div></div>
-    <div class="event-row"><div class="event-time"><span class="dot dot-gray"></span>Monday</div><div><div class="event-title">Back to reality</div><span class="event-tag tag-purple">Work crew</span></div><div class="event-note">Best of luck to those with Monday meetings. You survived.</div></div>
+    <div class="col-headers">
+      <span>Time</span><span>Event</span><span>Notes</span>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-teal"></span>Morning</div>
+      <div><div class="event-title">Sleep in &amp; relax</div></div>
+      <div class="event-note">No agenda. Enjoy the Airbnb one last time, great Miami food.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-blue"></span>All day</div>
+      <div><div class="event-title">Chill &amp; good food</div></div>
+      <div class="event-note">Eat, decompress, reminisce about the best trip ever.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-amber"></span>As needed</div>
+      <div><div class="event-title">Goodbyes &amp; departures</div></div>
+      <div class="event-note">Everyone catches their return flight at their own time.</div>
+    </div>
+    <div class="event-row">
+      <div class="event-time"><span class="dot dot-gray"></span>Monday</div>
+      <div><div class="event-title">Back to reality</div><span class="event-tag tag-purple">Work crew</span></div>
+      <div class="event-note">Best of luck to those with Monday meetings. You survived.</div>
+    </div>
   </div>
 
   <!-- CHECKLIST -->
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;margin-top:8px;">
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px; margin-top:8px;">
     <div class="section-heading" style="margin:0;">Pre-Trip Checklist</div>
-    <div style="background:var(--navy);color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:4px 12px;border-radius:20px;white-space:nowrap;">👤 Karthik only</div>
+    <div style="background:var(--navy); color:#fff; font-size:11px; font-weight:600; letter-spacing:1px; padding:4px 12px; border-radius:20px; white-space:nowrap;">👤 Karthik only</div>
   </div>
   <div class="checklist-grid">
-    <div class="check-item"><div class="check-dot" style="background:var(--red)"></div><div><div class="check-title">F1 Miami — Campus Pass</div><div class="check-desc">Campus Pass not opened yet. Book the SECOND it goes live. GO MAX VERSTAPPEN! 🏁</div></div></div>
-    <div class="check-item"><div class="check-dot" style="background:var(--blue)"></div><div><div class="check-title">Key West Resort</div><div class="check-desc">Not yet booked. Look for oceanfront properties — Playa Largo or Ocean's Edge recommended.</div></div></div>
-    <div class="check-item"><div class="check-dot" style="background:var(--teal)"></div><div><div class="check-title">Fury Cat Water Sports</div><div class="check-desc">Book at furycat.com in advance. 10 AM slot, 6.5-hour tour fills up fast on weekends.</div></div></div>
-    <div class="check-item"><div class="check-dot" style="background:var(--amber)"></div><div><div class="check-title">Party Bus</div><div class="check-desc">Confirm 11:30 PM pickup time with operator once the Airbnb address is finalized.</div></div></div>
-    <div class="check-item"><div class="check-dot" style="background:var(--purple)"></div><div><div class="check-title">May 2 Timing</div><div class="check-desc">Leave South Beach by 9–10 PM to arrive Key West before 2 AM. Long night after a full day.</div></div></div>
-    <div class="check-item"><div class="check-dot" style="background:var(--gray)"></div><div><div class="check-title">Airbnb</div><div class="check-desc">Confirm address and share with all guests ahead of time so late arrivals know exactly where to go.</div></div></div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--red)"></div>
+      <div>
+        <div class="check-title">F1 Miami — Campus Pass</div>
+        <div class="check-desc">Campus Pass not opened yet. Book the SECOND it goes live. GO MAX VERSTAPPEN! 🏁</div>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--blue)"></div>
+      <div>
+        <div class="check-title">Key West Resort</div>
+        <div class="check-desc">Not yet booked. Look for oceanfront properties — Playa Largo or Ocean's Edge recommended.</div>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--teal)"></div>
+      <div>
+        <div class="check-title">Fury Cat Water Sports</div>
+        <div class="check-desc">Book at furycat.com in advance. 10 AM slot, 6.5-hour tour fills up fast on weekends.</div>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--amber)"></div>
+      <div>
+        <div class="check-title">Party Bus</div>
+        <div class="check-desc">Confirm 11:30 PM pickup time with operator once the Airbnb address is finalized.</div>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--purple)"></div>
+      <div>
+        <div class="check-title">May 2 Timing</div>
+        <div class="check-desc">Leave South Beach by 9–10 PM to arrive Key West before 2 AM. Long night after a full day.</div>
+      </div>
+    </div>
+    <div class="check-item">
+      <div class="check-dot" style="background:var(--gray)"></div>
+      <div>
+        <div class="check-title">Airbnb</div>
+        <div class="check-desc">Confirm address and share with all guests ahead of time so late arrivals know exactly where to go.</div>
+      </div>
+    </div>
   </div>
 
   <!-- LINKS -->
   <div class="section-heading" style="margin-top:36px;">Key Links</div>
   <div class="links-row">
-    <a class="link-item" href="https://www.furycat.com/key-west/watersports-attractions" target="_blank"><div class="link-bullet" style="background:var(--teal)"></div><div class="link-label">Fury Cat Water Sports</div><div class="link-url">furycat.com ↗</div></a>
-    <a class="link-item" href="https://www.f1miamigp.com" target="_blank"><div class="link-bullet" style="background:var(--red)"></div><div class="link-label">F1 Miami Grand Prix</div><div class="link-url">f1miamigp.com ↗</div></a>
-    <div class="link-item"><div class="link-bullet" style="background:var(--gray)"></div><div class="link-label">Key West Drive (US-1 South)</div><div class="link-url">~4 hours · ~220 miles from Miami</div></div>
+    <a class="link-item" href="https://www.furycat.com/key-west/watersports-attractions" target="_blank">
+      <div class="link-bullet" style="background:var(--teal)"></div>
+      <div class="link-label">Fury Cat Water Sports</div>
+      <div class="link-url">furycat.com/key-west/watersports-attractions ↗</div>
+    </a>
+    <a class="link-item" href="https://www.f1miamigp.com" target="_blank">
+      <div class="link-bullet" style="background:var(--red)"></div>
+      <div class="link-label">F1 Miami Grand Prix</div>
+      <div class="link-url">f1miamigp.com ↗</div>
+    </a>
+    <div class="link-item">
+      <div class="link-bullet" style="background:var(--gray)"></div>
+      <div class="link-label">Key West Drive (US-1 South)</div>
+      <div class="link-url">~4 hours · ~220 miles from Miami</div>
+    </div>
   </div>
 
 </div>
 
 <!-- FOOTER -->
-<div class="page-footer">MIAMI + KEY WEST &nbsp;·&nbsp; MAY 1–4, 2026 &nbsp;·&nbsp; THE OFFICIAL TRIP PLAN</div>
+<div class="page-footer">
+  MIAMI + KEY WEST &nbsp;·&nbsp; MAY 1–4, 2026 &nbsp;·&nbsp; THE OFFICIAL TRIP PLAN
+</div>
 
 </body>
 </html>
